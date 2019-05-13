@@ -1,0 +1,192 @@
+body{
+    background: url("../images/arcade model.png") no-repeat;
+    background-size: 100% 820px;
+    background-position: center top;
+    background-color: rgb(46, 44, 44);
+}
+.headRow{
+    position: relative;
+    top: 22px;
+    height: 123px;
+}
+.headCol{
+    width:40%;
+}
+.myName{
+    width:60%;
+    font-size:48px;
+}
+.picHolder{
+    position: relative;
+    top: 11px;
+    left:11%;
+    height:90px;
+    width: 90px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.imgMe{
+width: 90px;
+height: 90px;
+margin-right: 25px;
+border-radius: 50%;
+object-fit: cover;
+transform: rotate(315deg);
+}
+[class*=push] {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    margin: 2px;
+    outline: none;
+    background-color: #c2290a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+  }
+  .arcadeScreen{
+    max-height:370px;
+  }
+  .main-container{
+        position:relative;
+        top: 59px;
+        background: rgba(255, 255, 255, 0.753);
+        border-radius: 20px;
+        padding: 30px;
+        width: 84%;
+        max-width: 650px;
+        border: 1px solid #ddd;
+        margin: 20px auto 40px auto;
+        max-height:600px;
+        height:75%;
+        overflow: auto;
+    }
+  .connectRow{
+    position:relative;
+    left:2%;
+    margin-top:2%;
+    max-width:180px;
+  }
+  .navRow{
+    position:relative;
+    margin-top: 3%;
+    max-width:150px;
+  }
+  .about{
+    float:left;
+  }
+  .push--arcadeButt {
+    box-shadow: inset 0 2.0833333333px 0 #da2e0b, inset 0 -2.0833333333px 0.8333333333px #aa2409, 0 0 0.8333333333px #c2290a, inset 0 0 1.6666666667px #791a06, inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px #c2290a, inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px #611405, inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.4166666667px 5.4347826087px black, inset 0 0 0.4166666667px 6.25px rgba(247, 133, 110, 0.7), inset 0 2.5px 0 5.8823529412px rgba(244, 71, 37, 0.7), inset 0 -2.5px 0.8333333333px 5.8823529412px rgba(145, 31, 8, 0.2), inset 0 0 0 9.0909090909px #c2290a, inset 0 20px 6.6666666667px #aa2409, inset 0 0 5px 8.3333333333px #911f08, 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+  }
+  .push--arcadeButt:active, .push--arcadeButt.is-pushed {
+    box-shadow: inset 0 2.0833333333px 0 #da2e0b, inset 0 -2.0833333333px 0.8333333333px #aa2409, 0 0 0.8333333333px #c2290a, inset 0 0 1.6666666667px #791a06, inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px #c2290a, inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px #611405, inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 1.25px 5.8823529412px black, inset 0 0 0.4166666667px 6.6666666667px rgba(247, 133, 110, 0.2), inset 0 2.5px 0 28px rgba(244, 71, 37, 0.5), inset 0 -2.5px 0.8333333333px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 9.0909090909px #b32609, inset 0 20px 6.6666666667px #9b2108, inset 0 0 5px 8.3333333333px #791a06, 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+    background-color: #b8270a;
+  }
+  .push--arcadeButtBlue {
+    box-shadow: inset 0 2.0833333333px 0 #0b3bda, inset 0 -2.0833333333px 0.8333333333px rgb(6, 13, 121), 0 0 0.8333333333px rgb(6, 17, 175), inset 0 0 1.6666666667px rgb(6, 11, 73), inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px rgb(6, 17, 175), inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px rgb(5, 9, 68), inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.4166666667px 5.4347826087px black, inset 0 0 0.4166666667px 6.25px rgba(125, 134, 255, 0.712), inset 0 2.5px 0 5.8823529412px rgba(57, 70, 247, 0.719), inset 0 -2.5px 0.8333333333px 5.8823529412px rgba(29, 8, 145, 0.2), inset 0 0 0 9.0909090909px rgb(6, 17, 175), inset 0 20px 6.6666666667px rgb(6, 13, 121), inset 0 0 5px 8.3333333333px rgb(6, 16, 155), 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(27, 40, 223);
+  }
+  .push--arcadeButtBlue:active, .push--arcadeButtBlue.is-pushed {
+    box-shadow: inset 0 2.0833333333px 0 #0b3bda, inset 0 -2.0833333333px 0.8333333333px rgb(6, 13, 121), 0 0 0.8333333333px rgb(6, 17, 175), inset 0 0 1.6666666667px rgb(6, 11, 73), inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px rgb(6, 17, 175), inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px rgb(5, 9, 68), inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 1.25px 5.8823529412px black, inset 0 0 0.4166666667px 6.6666666667px rgba(125, 134, 255, 0.219), inset 0 2.5px 0 28px rgba(57, 70, 247, 0.541), inset 0 -2.5px 0.8333333333px 28px rgba(11, 5, 97, 0.2), inset 0 0 0 9.0909090909px rgb(6, 17, 175), inset 0 20px 6.6666666667px rgb(6, 13, 121), inset 0 0 5px 8.3333333333px rgb(6, 16, 155), 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(16, 29, 211, 0.801);
+  }
+  .push--arcadeButtWhite {
+    box-shadow: inset 0 2.0833333333px 0 #e7e7e7, inset 0 -2.0833333333px 0.8333333333px #7e7e7d, 0 0 0.8333333333px #c2c2c2, inset 0 0 1.6666666667px #6b6968, inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px #c2c2c2, inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px #555555, inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.4166666667px 5.4347826087px black, inset 0 0 0.4166666667px 6.25px rgba(255, 234, 230, 0.7), inset 0 2.5px 0 5.8823529412px rgba(252, 231, 226, 0.7), inset 0 -2.5px 0.8333333333px 5.8823529412px rgba(131, 128, 128, 0.2), inset 0 0 0 9.0909090909px #b8b4b3, inset 0 20px 6.6666666667px #a5a1a0, inset 0 0 5px 8.3333333333px #858282, 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(209, 210, 224);
+  }
+  .push--arcadeButtWhite:active, .push--arcadeButtWhite.is-pushed {
+    box-shadow: inset 0 2.0833333333px 0 #e7e7e7, inset 0 -2.0833333333px 0.8333333333px #7e7e7d, 0 0 0.8333333333px #c2c2c2, inset 0 0 1.6666666667px #6b6968, inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px #c2c2c2, inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px #555555, inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.767), inset 0 0 1.25px 5.8823529412px black, inset 0 0 0.4166666667px 6.6666666667px rgba(255, 236, 232, 0.377), inset 0 2.5px 0 28px rgba(255, 246, 244, 0.356), inset 0 -2.5px 0.8333333333px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 9.0909090909px #b8b4b3, inset 0 20px 6.6666666667px #a5a1a0, inset 0 0 5px 8.3333333333px #858282, 0 1.25px 2.5px rgba(0, 0, 0, 0.5);
+    background-color: #ddd2d0c9;
+  }
+  .push--arcadeButt:active:before, .push--arcadeButt.is-pushed:before {
+    opacity: 0.5;
+  }
+  .push--arcadeButt:before {
+    content: "";
+    position: absolute;
+    bottom: 11.1111111111px;
+    left: 13.8888888889px;
+    display: block;
+    width: 22.7272727273px;
+    height: 15.1515151515px;
+    background: rgba(255, 218, 210, 0.2);
+    background: linear-gradient(to top, rgba(255, 217, 209, 0.3) 0%, rgba(58, 56, 55, 0.1) 100%);
+    border-radius: 40% 40% 60% 60%;
+    transition: opacity 200ms;
+  }
+
+  [class*=mini] {
+    
+    margin-top:5%;
+    margin-left:1%;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    background-color: #636363;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+  }
+  .github{
+    position:relative;
+    height:20px;
+    width:20px;
+    top:2px;
+  }
+  .mini--buttBlack {
+    margin-left:10%;
+    box-shadow: inset 0 1.6666666667px 0 #000000, inset 0 -1.6666666667px 0.6666666667px #504d4d, 0 0 0.6666666667px #3d3b3b, inset 0 0 1.3333333333px #252524, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #4d4a49, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #302e2e, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.3333333333px 4.347826087px black, inset 0 0 0.3333333333px 5px rgba(31, 27, 27, 0.7), inset 0 2px 0 4.7058823529px rgba(100, 95, 94, 0.7), inset 0 -2px 0.6666666667px 4.7058823529px rgba(20, 18, 17, 0.2), inset 0 0 0 7.2727272727px #3b3939, inset 0 16px 5.3333333333px #524c4b, inset 0 0 4px 6.6666666667px #5e5959, 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .mini--buttBlack:active, .mini--buttBlack.is-pushed {
+    box-shadow: inset 0 1.6666666667px 0 #000000, inset 0 -1.6666666667px 0.6666666667px #504d4d, 0 0 0.6666666667px #3d3b3b, inset 0 0 1.3333333333px #252524, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #4d4a49, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #302e2e, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 1px 4.7058823529px black, inset 0 0 0.3333333333px 5.3333333333px rgba(31, 27, 27, 0.2), inset 0 2px 0 28px rgba(100, 95, 94, 0.5), inset 0 -2px 0.6666666667px 28px rgba(20, 18, 17, 0.2), inset 0 0 0 7.2727272727px #3b3939, inset 0 16px 5.3333333333px #524c4b, inset 0 0 4px 6.6666666667px #524f4e, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #5a5656;
+  }
+  .stack{
+    position:relative;
+    top:2px;
+    height:20px;
+    width:20px;
+  }
+  .mini--buttOrange {
+    box-shadow: inset 0 1.6666666667px 0 #d6680d, inset 0 -1.6666666667px 0.6666666667px #b85e0b, 0 0 0.6666666667px #c0620b, inset 0 0 1.3333333333px #8d4e06, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #bb600c, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #582e05, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.3333333333px 4.347826087px black, inset 0 0 0.3333333333px 5px rgba(255, 186, 121, 0.7), inset 0 2px 0 4.7058823529px rgba(244, 137, 37, 0.7), inset 0 -2px 0.6666666667px 4.7058823529px rgba(143, 73, 8, 0.2), inset 0 0 0 7.2727272727px #c7600c, inset 0 16px 5.3333333333px #aa5109, inset 0 0 4px 6.6666666667px #924608, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #b65f08;
+  }
+  .mini--buttOrange:active, .mini--buttOrange.is-pushed {
+    box-shadow: inset 0 1.6666666667px 0 #d6680d, inset 0 -1.6666666667px 0.6666666667px #b85e0b, 0 0 0.6666666667px #c0620b, inset 0 0 1.3333333333px #8d4e06, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #bb600c, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #582e05, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 1px 4.7058823529px black, inset 0 0 0.3333333333px 5.3333333333px rgba(255, 186, 121, 0.2), inset 0 2px 0 28px rgba(244, 137, 37, 0.5), inset 0 -2px 0.6666666667px 28px rgba(143, 73, 8, 0.2), inset 0 0 0 7.2727272727px #c7600c, inset 0 16px 5.3333333333px #aa5109, inset 0 0 4px 6.6666666667px #85410a, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #b65f08;
+  }
+  .linkedin{
+    position:relative;
+    top:2.5px;
+    height:20px;
+    width:20px;
+  }
+  .mini--buttSkyBlue {
+    box-shadow: inset 0 1.6666666667px 0 #0d7cd6, inset 0 -1.6666666667px 0.6666666667px #0b64b8, 0 0 0.6666666667px #0b68c0, inset 0 0 1.3333333333px #06578d, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #0c58bb, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #053758, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.3333333333px 4.347826087px black, inset 0 0 0.3333333333px 5px rgba(121, 201, 255, 0.7), inset 0 2px 0 4.7058823529px rgba(37, 127, 244, 0.7), inset 0 -2px 0.6666666667px 4.7058823529px rgba(8, 51, 143, 0.2), inset 0 0 0 7.2727272727px #0c5dc7, inset 0 16px 5.3333333333px #0954aa, inset 0 0 4px 6.6666666667px #085b92, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #0870b6;
+  }
+  .mini--buttSkyBlue:active, .mini--buttSkyBlue.is-pushed {
+    box-shadow: inset 0 1.6666666667px 0 #0d6bd6, inset 0 -1.6666666667px 0.6666666667px #0b50b8, 0 0 0.6666666667px #0b59c0, inset 0 0 1.3333333333px #06508d, inset 0 0 1.3333333333px rgba(51, 51, 51, 0.5), inset 0 0 0.6666666667px 3.3333333333px #0c66bb, inset 0 -1.3333333333px 1px 4px rgba(51, 51, 51, 0.7), inset 0 0 0.6666666667px 4px #053058, inset 0 0 0.6666666667px 4px rgba(51, 51, 51, 0.7), inset 0 0 1px 4.7058823529px black, inset 0 0 0.3333333333px 5.3333333333px rgba(121, 184, 255, 0.2), inset 0 2px 0 28px rgba(37, 127, 244, 0.5), inset 0 -2px 0.6666666667px 28px rgba(8, 62, 143, 0.2), inset 0 0 0 7.2727272727px #0c57c7, inset 0 16px 5.3333333333px #094faa, inset 0 0 4px 6.6666666667px #0a3f85, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #0845b6;
+  }
+  .mini--buttBlack:active:before, .mini--buttBlack.is-pushed:before {
+    opacity: 0.5;
+  }
+  .mini--buttBlack:before {
+    content: "";
+    position: absolute;
+    bottom: 8.8888888889px;
+    left: 11.1111111111px;
+    display: block;
+    width: 18.1818181818px;
+    height: 12.1212121212px;
+    background: rgba(255, 215, 207, 0.2);
+    background: linear-gradient(to top, rgba(248, 215, 209, 0.3) 0%, rgba(24, 22, 21, 0.1) 100%);
+    border-radius: 40% 40% 60% 60%;
+    transition: opacity 200ms;
+  }

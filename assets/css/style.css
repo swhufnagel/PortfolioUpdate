@@ -48,6 +48,7 @@ transform: rotate(315deg);
   }
   .arcadeScreen{
     max-height:370px;
+    min-height:370px;
   }
   .main-container{
         position:relative;
@@ -63,6 +64,34 @@ transform: rotate(315deg);
         height:75%;
         overflow: auto;
     }
+  .appPic{
+    height:50px;
+    width:50px;
+    border-radius: 12px;
+    float:left;
+    margin-right:15px;
+    margin-left:15px;
+    margin-bottom:20px;
+  }
+  #appPic3{
+    background-color:black;
+  }
+  #popup{
+    max-width: 79%;
+    display:block;
+    bottom:9px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius:25px;
+    min-height:280px;
+  }
+  #appPreview{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:50%;
+    width:50%;
+  }
   .connectRow{
     position:relative;
     left:2%;
@@ -76,6 +105,26 @@ transform: rotate(315deg);
   }
   .about{
     float:left;
+  }
+  .contact-head{
+    margin-bottom:10px;
+  }
+  .FormBox{
+    padding: 8px;
+    border: 1px solid black;
+    max-height: 214px;
+  }
+  .name-label{
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  .email-label{
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  .message-label{
+    margin-right: 14%;
+    margin-bottom: 2%;
   }
   .push--arcadeButt {
     box-shadow: inset 0 2.0833333333px 0 #da2e0b, inset 0 -2.0833333333px 0.8333333333px #aa2409, 0 0 0.8333333333px #c2290a, inset 0 0 1.6666666667px #791a06, inset 0 0 1.6666666667px rgba(51, 51, 51, 0.5), inset 0 0 0.8333333333px 4.1666666667px #c2290a, inset 0 -1.6666666667px 1.25px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.8333333333px 5px #611405, inset 0 0 0.8333333333px 5px rgba(51, 51, 51, 0.7), inset 0 0 0.4166666667px 5.4347826087px black, inset 0 0 0.4166666667px 6.25px rgba(247, 133, 110, 0.7), inset 0 2.5px 0 5.8823529412px rgba(244, 71, 37, 0.7), inset 0 -2.5px 0.8333333333px 5.8823529412px rgba(145, 31, 8, 0.2), inset 0 0 0 9.0909090909px #c2290a, inset 0 20px 6.6666666667px #aa2409, inset 0 0 5px 8.3333333333px #911f08, 0 1.25px 2.5px rgba(0, 0, 0, 0.5);

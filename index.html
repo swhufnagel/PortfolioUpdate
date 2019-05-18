@@ -13,7 +13,7 @@
     <title>About</title>
 </head>
 
-<body>
+<body class="body">
     <div class="container">
         <div class="row headRow">
             <div class="col-sm-4 headCol">
@@ -28,52 +28,79 @@
         </div>
         <div class="row">
             <div class="col-sm-12 arcadeScreen">
-                <div class="main-container">
-                    <p>User-focused full stack web-developer that specializes in Javascript. Spent the last 5 years
+                <div id="arcadeScreen" class="main-container">
+                    <div id="switchScreen">
+                        <p>User-focused full stack web-developer that specializes in Javascript. Spent the last 5 years
                             honing my technical skills to become a confident programmer, completing my Associates
-                            
+
                             Degree in Computer Programming as well as earning my certificate at DU’s intensive web-
                             development bootcamp program. I keep my head down and don’t stop until the job is done and
-                            
-                            task is complete. I have 10 years experience in customer service so I am driven to provide an
+
+                            task is complete. I have 10 years experience in customer service so I am driven to provide
+                            an
                             ideal User Experience in my products. I have advanced experience with web development
                             languages including but not limited to HTML, CSS, Javascript, React & MySQL. Being a quick
                             learner made it possible for me to grasp the context of programming language and move on to
-                            apply it. My optimistic spirit drives the whole team to excel and perform without hesitation, I
+                            apply it. My optimistic spirit drives the whole team to excel and perform without
+                            hesitation, I
                             strive to succeed with no alternative.
-                    </p>
+                        </p>
+                    </div>
+                    
+                    <div style="z-index:2" class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog-centered" role="document">
+                            <div id="popup" class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">App</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Code</button>
+                                        <button type="button" class="btn btn-secondary">App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8 connectRow">
-                <button class="mini--buttBlack">
-                    <img class ="github" src="assets/images/maybe.png">
-                </button>
-                <button class="mini--buttOrange">
-                    <img class="stack" src="assets/images/iconfinder_318_Stack_Overflow_logo_4375093.png">
-                </button>
-                <button class="mini--buttSkyBlue">
-                    <img  class='linkedin' src="assets/images/iconfinder_linkedin_1218170.png">
-                </button>
-            </div>
-            <div class="col-sm-4 navRow">
-                <div class="about">
-                    <form method="get" action="index.html">
-                    <button class="push--arcadeButt aboutbutt"></button>
+            <div style="z-index:3" class="col-sm-8 connectRow">
+                <form target="" method="get" action="https://github.com/swhufnagel">
+                    <button class="mini--buttBlack">
+                        <img target="" class="github" src="assets/images/maybe.png">
+                    </button>
                 </form>
+                <form target="" method="get" action="https://stackoverflow.com/users/10869933/sean-hufnagel">
+                    <button class="mini--buttOrange">
+                        <img class="stack" src="assets/images/iconfinder_318_Stack_Overflow_logo_4375093.png">
+                    </button>
+                </form>
+                <form target="" method="get" action="https://www.linkedin.com/in/sean-hufnagel-38a888125/">
+                    <button class="mini--buttSkyBlue">
+                        <img class='linkedin' src="assets/images/iconfinder_linkedin_1218170.png">
+                    </button>
+                </form>
+            </div>
+            <div style="z-index:3" class="col-sm-4 navRow">
+                <div class="about">
+                    <button id="homeButt" class="push--arcadeButt aboutbutt"></button>
                     <p>About</p>
                 </div>
                 <div class="contact">
-                    <form method="get" action="contact.html">
-                    <button class="push--arcadeButtBlue contactbutt"></button>
-                    </form>
+                    <button id="contactButt" class="push--arcadeButtBlue contactbutt"></button>
                     <p>Contact</p>
                 </div>
                 <div class="portfolio">
-                    <form method="get" action="portfolio.html">
-                    <button class="push--arcadeButtWhite portfoliobutt"></button>
-                    </form>
+                    <button id="portfolioButt" class="push--arcadeButtWhite portfoliobutt"></button>
                     <p>Portfolio</p>
                 </div>
             </div>
@@ -81,6 +108,8 @@
         </div>
     </div>
 
+
+    <script src="assets/javascript/portfolio.js"></script>
 </body>
 
 </html>

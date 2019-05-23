@@ -8,9 +8,9 @@
     var appPrev = document.createElement("img");    
     var modal = document.createElement("div");
     modal.classList.add("previewHolder");
-    
-    while (modal.firstChild) {
-        modal.removeChild(modal.firstChild);
+    var modalBody = document.querySelector(".modal-body")
+    while (modalBody.firstChild) {
+        modalBody.removeChild(modalBody.firstChild);
     }
     document.getElementById("exampleModalLabel").innerHTML = appTitles[num];
     document.querySelector('.modal-body').appendChild(modal);
@@ -34,7 +34,7 @@ var whichLink;
 var codeLinks = ["https://github.com/swhufnagel/RPG-Game","https://github.com/swhufnagel/Project-1/","https://github.com/swhufnagel/RPS-Multiplayer/","https://github.com/swhufnagel/GifTastic/","https://github.com/swhufnagel/TriviaGame/"]
 var gitHubLinks = ["https://swhufnagel.github.io/RPG-Game/","https://swhufnagel.github.io/Project-1/","https://swhufnagel.github.io/RPS-Multiplayer/","https://swhufnagel.github.io/GifTastic/","https://swhufnagel.github.io/TriviaGame/"];
 var appTitles = ["Pokemon RPG", "Tunedea","Multiplayer RPS", "Gif Finder", "NFL Trivia"];
-var imgSrc = ["assets/images/pokemonpreview.png","assets/images/tunedeapreview.png","assets/images/RPSpreview.png","assets/images/gifpreview.png","assets/images/triviapreview.png"];
+var imgSrc = ["assets/images/pokemonpreview.png","assets/images/tundeapreview.png","assets/images/RPSpreview.png","assets/images/gifpreview.png","assets/images/triviapreview.png"];
 document.getElementById("portfolioButt").addEventListener("click", function(){
     var switchScreen = document.getElementById("switchScreen");
     while (switchScreen.firstChild) {

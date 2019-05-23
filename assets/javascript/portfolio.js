@@ -18,8 +18,23 @@
     appPrev.setAttribute("id", "appPreview")
     modal.appendChild(appPrev);
 }
+function setCodeLink(){
+    whichApp = selectedApp.substr(selectedApp.length -1)
+    whichLink = gitHubLinks[whichApp];
+    document.querySelector("#codeLink").action = whichLink;
+}
+function setAppLink(){
+    whichApp = selectedApp.substr(selectedApp.length -1)
+    whichLink = codeLinks[whichApp];
+    document.querySelector("#appLink").action = whichLink;
+}
+var whichApp;
+var selectedApp;
+var whichLink;
+var codeLinks = ["https://github.com/swhufnagel/RPG-Game","https://github.com/swhufnagel/Project-1/","https://github.com/swhufnagel/RPS-Multiplayer/","https://github.com/swhufnagel/GifTastic/","https://github.com/swhufnagel/TriviaGame/"]
+var gitHubLinks = ["https://swhufnagel.github.io/RPG-Game/","https://swhufnagel.github.io/Project-1/","https://swhufnagel.github.io/RPS-Multiplayer/","https://swhufnagel.github.io/GifTastic/","https://swhufnagel.github.io/TriviaGame/"];
 var appTitles = ["Pokemon RPG", "Tunedea","Multiplayer RPS", "Gif Finder", "NFL Trivia"];
-var imgSrc = ["assets/images/pokemonpreview.png"]
+var imgSrc = ["assets/images/pokemonpreview.png","assets/images/tunedeapreview.png","assets/images/RPSpreview.png","assets/images/gifpreview.png","assets/images/triviapreview.png"];
 document.getElementById("portfolioButt").addEventListener("click", function(){
     var switchScreen = document.getElementById("switchScreen");
     while (switchScreen.firstChild) {
@@ -28,7 +43,6 @@ document.getElementById("portfolioButt").addEventListener("click", function(){
     var apps = ["Tunedea","Rock Paper Scisscors","Pokemon","Giphy","Trivia"]
     for(i=0;i<apps.length;i++){
     var appIcon = document.createElement("div");
-    // var currentScreen = document.getElementById("switchScreen")
     switchScreen.appendChild(appIcon);
     appIcon.className +="app";
     appIcon.className +=" app" + i;
@@ -37,7 +51,7 @@ document.getElementById("portfolioButt").addEventListener("click", function(){
     appPic.setAttribute("id","appPic" + i);
     appIcon.appendChild(appPic);
 }
-document.getElementById("appPic0").setAttribute("src", "assets/images/pokeomonicon.jpg");
+document.getElementById("appPic0").setAttribute("src","assets/images/pokeomonicon.jpg");
 document.getElementById("appPic1").setAttribute("src","assets/images/tunedeaicon.png");
 document.getElementById("appPic2").setAttribute("src","assets/images/rpsicon.png");
 document.getElementById("appPic3").setAttribute("src","assets/images/giphyicon.png");
@@ -55,25 +69,42 @@ document.querySelector('#homeButt').addEventListener('click', function () {
     switchScreen.appendChild(brandStatement);
 })
 document.querySelector('.app0').addEventListener('click', function () {
-        console.log("clicked");
        showPreview(0);
+       selectedApp = this.classList[1];
+       setCodeLink();
+       setAppLink();
 })
 document.querySelector('.app1').addEventListener('click', function () {
-        console.log("clicked");
        showPreview(1);
+       selectedApp = this.classList[1];
+       setCodeLink();
+       setAppLink();
 })
 document.querySelector('.app2').addEventListener('click', function () {
-        console.log("clicked");
        showPreview(2);
+       selectedApp = this.classList[1];
+       setCodeLink();
+       setAppLink();
 })
 document.querySelector('.app3').addEventListener('click', function () {
-        console.log("clicked");
        showPreview(3);
+       selectedApp = this.classList[1];
+       setCodeLink();
+       setAppLink();
 })
 document.querySelector('.app4').addEventListener('click', function () {
-        console.log("clicked");
        showPreview(4);
+       selectedApp = this.classList[1];
+       setCodeLink();
+       setAppLink();
 })
+})
+document.querySelector('#codeButt').addEventListener("click", function(){
+    document.querySelector("#codeLink").submit();
+})
+document.querySelector('#appButt').addEventListener("click", function(){
+    document.querySelector("#appLink").submit();
+
 })
 document.querySelector('#contactButt').addEventListener('click', function () {
     var switchScreen = document.getElementById("switchScreen");
@@ -133,4 +164,11 @@ document.querySelector('#contactButt').addEventListener('click', function () {
     FormContainer.append(messageContainer);
 
     switchScreen.append(FormContainer);
+})
+document.querySelector("#listenClose").addEventListener("click", function(e){
+    if(e.target & e.target.id === "closeButt"){
+        console.log("close");
+    document.querySelector("#exampleModal").removeAttribute("style");
+    document.querySelector("#exampleModal").setAttribute("style", "display: none");
+    }
 })

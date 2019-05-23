@@ -165,10 +165,8 @@ document.querySelector('#contactButt').addEventListener('click', function () {
 
     switchScreen.append(FormContainer);
 })
-document.querySelector("#listenClose").addEventListener("click", function(e){
-    if(e.target & e.target.id === "closeButt"){
-        console.log("close");
+document.querySelector("#closeButt").addEventListener("click", function(){
     document.querySelector("#exampleModal").removeAttribute("style");
     document.querySelector("#exampleModal").setAttribute("style", "display: none");
-    }
+    document.querySelector('#exampleModal').classList.remove("show")
 })
